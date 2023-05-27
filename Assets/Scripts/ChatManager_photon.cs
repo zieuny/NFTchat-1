@@ -29,6 +29,7 @@ public class ChatManager_photon : MonoBehaviourPunCallbacks
     {
         if (Input.GetKeyDown(KeyCode.Return) && m_inputField.isFocused == false)
         {
+            OnEndEditEvent();
             m_inputField.ActivateInputField();
         }
     }
